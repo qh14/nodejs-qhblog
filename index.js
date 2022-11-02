@@ -12,7 +12,7 @@ app.use(bodyParser.json({ type: 'application/json' }))
 app.use(bodyParser.raw());
 
 const mongoose = require('mongoose');
-mongoose.connect('mongodb://localhost/mydatabase', { useNewUrlParser: true })
+mongoose.connect('mongodb://localhost/my_database', { useNewUrlParser: true })
 
 const fileUpload = require('express-fileupload')
 app.use(fileUpload())
@@ -46,7 +46,7 @@ const validateMiddleWare = require('./middleware/validationMiddleware')
 app.use('/posts/store', validateMiddleWare)
 
 //Tao server
-app.listen(process.env.PORT, () => {
+app.listen(4000, () => {
 
 })
 
