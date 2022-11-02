@@ -12,7 +12,7 @@ app.use(bodyParser.json({ type: 'application/json' }))
 app.use(bodyParser.raw());
 
 const mongoose = require('mongoose');
-mongoose.connect('mongodb://localhost/my_database', { useNewUrlParser: true })
+mongoose.connect('mongodb://localhost/mydatabase', { useNewUrlParser: true })
 
 const fileUpload = require('express-fileupload')
 app.use(fileUpload())
