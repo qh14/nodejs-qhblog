@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<%- include('layouts/header'); -%>
+
+    <body>
+        <%- include('layouts/navigation'); -%>
+            <!-- Page Header-->
+            <header class="masthead" style="background-image: url('assets/img/contact-bg.jpg')">
+                <div class="container position-relative px-4 px-lg-5">
+                    <div class="row gx-4 gx-lg-5 justify-content-center">
+                        <div class="col-md-10 col-lg-8 col-xl-7">
+                            <div class="page-heading">
+                                <h1>REGISTER PAGE</h1>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </header>
+
+            <!-- Main Content -->
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-md-10 mx-auto">
+                        <form action="/users/register" method="POST">
+                            <div class="control-group">
+                                <div class="form-group floating-label-formgroup controls">
+                                    <label>Username</label>
+                                    <input type="text" class="form-control" placeholder="Username" id="username"
+                                        name="username">
+                                </div>
+                            </div>
+                            <div class="control-group">
+                                <div class="form-group floating-label-formgroup controls">
+                                    <label>Password</label>
+                                    <input type="password" class="form-control" placeholder="Password" id="password"
+                                        name="password">
+                                </div>
+                            </div>
+                            <br>
+
+                            <div class="form-group">
+                                <button type="submit" class="btn btn-primary" id="sendMessageButton">Register</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <!-- Footer-->
+            <%- include('layouts/footer'); -%>
+                <!-- Bootstrap core JS-->
+                <%- include('layouts/scripts'); -%>
+                    <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
+    </body>
+
+</html>
